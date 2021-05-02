@@ -1,0 +1,5 @@
+FROM rustembedded/cross:x86_64-unknown-linux-gnu-0.2.1
+
+RUN apt-get update \
+    && apt-get install --no-install-recommends -y libdbus-1-dev:amd64 \
+    pkg-config libudev-dev:amd64 libglib2.0-dev:amd64 libudev-dev:amd64
